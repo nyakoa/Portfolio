@@ -1,0 +1,144 @@
+<%- include('partials/header.ejs') %>
+    <section class="container">
+      <div class="hero-section">
+        <div class="hero-container">
+          <div class="hero-left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="hero-text">
+            <h1>Hi, I'm <span class="highlight">Lilian</span></h1>
+            <p class="hero-para">A Full-Stack Web Developer</p>
+            <p>
+              I specialize in building modern, responsive, and user-friendly<br />
+              web applications. With a passion for clean code and creative<br />
+              problem-solving, I turn ideas into functional digital experiences.
+            </p>
+            <a href="/contact" class="btn">Contact Me</a>
+          </div>
+        </div>
+        <div id="avatar">
+          <img
+            class="hero-img"
+            src="/images/photo3.png"
+            alt="Lilian's Avatar"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="container">
+  <div >
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Behind every clean line of code is a curious mind; that’s me,
+        <span class="highlight">Lilian</span>.  
+        I’m a Full-Stack Web Developer who enjoys solving real problems
+        with digital solutions that actually work.
+      </p>
+      <p>
+        My toolkit spans frontend magic (HTML, CSS, JavaScript) to
+        backend power (Node.js, SQL, PostgreSQL).  
+        I thrive on building fast, functional, and user-friendly applications.
+      </p>
+      <p>
+        Always learning and always experimenting, I push myself to turn ideas
+        into experiences that stand out.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section id="skills" class="container skills-section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-icon">
+          <img
+            class="icon-size"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+          />
+        </div>
+
+        <div class="skill-icon">
+          <img
+            class="icon-size"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+          />
+        </div>
+        <div class="skill-icon">
+          <img
+            class="icon-size"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+          />
+        </div>
+        <div class="skill-icon">
+          <img
+            class="icon-size"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          />
+        </div>
+        <div class="skill-icon">
+          <img
+            class="icon-size"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"
+          />
+        </div>
+        <div class="skill-icon">
+          <img
+            class="icon-size"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+          />
+        </div>
+        <div class="skill-icon">
+          <img
+            class="icon-size"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <p>
+        Below are practical examples of my work that highlight my technical
+        skills and experience. They showcase my ability to tackle complex
+        challenges, adapt to different technologies, and deliver well-structured
+        projects. Each project includes a short description along with links to
+        the source code and live demos. Click on any project to explore more
+        details.
+      </p>
+      <div class="project-card">
+  <img
+    src="/images/expense-tracker.png"
+    alt="Expense Tracker App"
+    class="project-image"
+  />
+  <div class="project-content">
+  <h3>Expense Tracker App</h3>
+  <p>
+    A web application that helps users manage their daily expenses by
+    adding, editing, and deleting transactions. It features a clean
+    dashboard, balance summary, and persistent data storage.
+  </p>
+
+  <div class="project-stack">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Node.js</span>
+    <span>Express</span>
+    <span>PostgreSQL</span>
+  </div>
+</div>
+</div>
+
+    
+    <script>const toggleBtn = document.getElementById("menu-toggle");
+  const nav = document.getElementById("navbar");
+
+  toggleBtn.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  })
+  </script>
+  </body>
+</html>
