@@ -92,26 +92,6 @@ h2 {
   }
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff4d4d;
-  }
-  50% {
-    text-shadow: 0 0 15px #ff0000, 0 0 25px #ff6666;
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
 .hero-section {
   display: flex;
   gap: 100px;
@@ -135,7 +115,7 @@ h2 {
   width: 20px;
   height: 12px;
   border-radius: 9999px;
-  background-color: #ff0000;
+  background-color: #915ef9;
   margin-top: 14px;
 }
 
@@ -143,7 +123,7 @@ h2 {
   width: 4px;
   height: 21rem;
 
-  background: linear-gradient(to bottom, #ff0000, #ff0000 30%, transparent);
+  background: linear-gradient(to bottom, #915ef9, #915ef9 30%, transparent);
 }
 
 .hero-text {
@@ -172,26 +152,14 @@ p {
   color: rgb(206, 201, 201);
 }
 
-.highlight {
-  color: #ff0000;
-}
-
-#avatar {
-  margin-top: 2rem;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-}
-
-#avatar img {
+/* #avatar img {
   width: 14rem;
   height: 14rem;
   object-fit: cover;
   object-position: 60% 40%;
-  border: 3px solid #ff0000;
-  box-shadow: 0 0 40px 3px #ff0000;
+
   border-radius: 50%;
-}
+} */
 
 .btn {
   width: auto;
@@ -199,7 +167,7 @@ p {
   padding: 10px 20px;
   font-size: 18px;
   border-radius: 10px;
-  background-color: #ff0000;
+  background-color: #915ef9;
   border: none;
   color: #ffff;
   margin-top: 30px;
@@ -209,7 +177,7 @@ p {
   transition: all 0.3s ease;
 }
 .btn:hover {
-  background-color: #c41111;
+  background-color: #754acb;
 }
 
 .about-title {
@@ -228,8 +196,67 @@ p {
 }
 
 .highlight {
-  color: #ff0000;
+  color: #915ef9;
   font-weight: 600;
+}
+#avatar {
+  position: relative;
+  width: 14rem;
+  height: 14rem;
+  margin: auto;
+}
+
+#avatar img {
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover;
+  object-position: 60% 40%;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+/* SVG arcs */
+.arc-ring {
+  position: absolute;
+  top: -1.5rem; /* pushes arcs away from image */
+  left: -1.5rem;
+  width: 17rem; /* bigger than image */
+  height: 17rem;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Base arc style */
+.arc {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 300 720;
+  transform-origin: 50% 50%;
+}
+
+.arc1 {
+  stroke: #915eff;
+  animation: rotate-cw 14s linear infinite;
+}
+
+.arc2 {
+  stroke: #915ef9;
+  animation: rotate-ccw 20s linear infinite;
+}
+
+/* Animations */
+@keyframes rotate-cw {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-ccw {
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 .skills {
