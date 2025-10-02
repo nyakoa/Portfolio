@@ -233,29 +233,22 @@ p {
   fill: none;
   stroke-width: 2.5;
   stroke-linecap: round;
-  stroke-dasharray: 300 720;
+  stroke-dasharray: 350 520;
   transform-origin: 50% 50%;
+  animation: rotate-cw 12s linear infinite;
 }
 
 .arc1 {
-  stroke: #915eff;
-  animation: rotate-cw 14s linear infinite;
+  stroke: url(#grad1);
 }
-
 .arc2 {
-  stroke: #915ef9;
-  animation: rotate-ccw 20s linear infinite;
+  stroke: url(#grad2);
+  animation-delay: -6s; /* offset trail */
 }
 
-/* Animations */
 @keyframes rotate-cw {
   to {
     transform: rotate(360deg);
-  }
-}
-@keyframes rotate-ccw {
-  to {
-    transform: rotate(-360deg);
   }
 }
 
